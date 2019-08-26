@@ -13,6 +13,16 @@ class ImagesController < ApplicationController
     render json: @image
   end
 
+  def show_product
+    @images = []
+    Shop.find(params[:id]).products.limit(4).each { |product|
+      @images.push(product.images[0])
+    }
+    puts @images
+
+    render json: @images
+  end
+
   # POST /images
   def create
     @image = Image.new(image_params)
