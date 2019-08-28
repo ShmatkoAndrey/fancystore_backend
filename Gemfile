@@ -42,3 +42,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # gem 'devise'
 gem 'shmatgem'
+
+# Use Json Web Token (JWT) for token based authentication
+gem 'jwt'
