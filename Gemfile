@@ -45,3 +45,5 @@ gem 'shmatgem'
 
 # Use Json Web Token (JWT) for token based authentication
 gem 'jwt'
+
+gem 'active_model_serializers', '~> 0.10.0'
